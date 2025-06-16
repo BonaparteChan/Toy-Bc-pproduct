@@ -1,369 +1,149 @@
-﻿<!DOCTYPE html>
-<html>
-  <head>
-    <title>index</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <link href="files/index/styles.css" type="text/css" rel="stylesheet"/>
-    <script src="resources/scripts/jquery-3.2.1.min.js"></script>
-    <script src="resources/scripts/axure/axQuery.js"></script>
-    <script src="resources/scripts/axure/globals.js"></script>
-    <script src="resources/scripts/axutils.js"></script>
-    <script src="resources/scripts/axure/annotation.js"></script>
-    <script src="resources/scripts/axure/axQuery.std.js"></script>
-    <script src="resources/scripts/axure/doc.js"></script>
-    <script src="resources/scripts/messagecenter.js"></script>
-    <script src="resources/scripts/axure/events.js"></script>
-    <script src="resources/scripts/axure/recording.js"></script>
-    <script src="resources/scripts/axure/action.js"></script>
-    <script src="resources/scripts/axure/expr.js"></script>
-    <script src="resources/scripts/axure/geometry.js"></script>
-    <script src="resources/scripts/axure/flyout.js"></script>
-    <script src="resources/scripts/axure/model.js"></script>
-    <script src="resources/scripts/axure/repeater.js"></script>
-    <script src="resources/scripts/axure/sto.js"></script>
-    <script src="resources/scripts/axure/utils.temp.js"></script>
-    <script src="resources/scripts/axure/variables.js"></script>
-    <script src="resources/scripts/axure/drag.js"></script>
-    <script src="resources/scripts/axure/move.js"></script>
-    <script src="resources/scripts/axure/visibility.js"></script>
-    <script src="resources/scripts/axure/style.js"></script>
-    <script src="resources/scripts/axure/adaptive.js"></script>
-    <script src="resources/scripts/axure/tree.js"></script>
-    <script src="resources/scripts/axure/init.temp.js"></script>
-    <script src="resources/scripts/axure/legacy.js"></script>
-    <script src="resources/scripts/axure/viewer.js"></script>
-    <script src="resources/scripts/axure/math.js"></script>
-    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
-    <script src="data/document.js"></script>
-    <script src="files/index/data.js"></script>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Untitled Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link type="text/css" href="resources/css/reset.css" rel="Stylesheet" />
+    <link type="text/css" href="resources/css/default.css" rel="Stylesheet" />
+    <link rel="shortcut icon" href="resources/images/favicon_play.ico" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet'>
+
     <script type="text/javascript">
-      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
-      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
-      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+        if (location.href.toString().indexOf('file://localhost/') == 0) {
+            location.href = location.href.toString().replace('file://localhost/', 'file:///');
+        }
     </script>
-  </head>
-  <body>
-    <div id="base" class="">
 
-      <!-- Unnamed (矩形) -->
-      <div id="u10513" class="ax_default box_1">
-        <div id="u10513_div" class=""></div>
-        <div id="u10513_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+    <!--<link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/debug/styles/debug.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/handoff.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/codemirror.css" />-->
+</head>
+<body scroll="no" class="hashover" style="overflow: hidden;">
+    <div id="topPanel">
+        <div id="interfaceControlFrame">
+            <div id="interfaceControlFrameLeft">
+                <div id="interfaceControlFrameMinimizeContainer">
+                    <a title="Collapse" id="interfaceControlFrameMinimizeButton">
+                        <div id="minimizeArrow" class="minimizeButtonHover minimizeIcon"></div>
+                        <div id="minimizeX" class="minimizeButton minimizeIcon"></div>
+                    </a>
+                </div>
+                <div id="interfaceControlFrameCloseContainer">
+                    <a title="Close" id="interfaceControlFrameCloseButton">CLOSE</a>
+                </div>
+
+                <div id="sitemapControlFrameContainer" title="Project Pages">
+                    <div id="projectControlFrameHeaderContainer">
+                        <ul id="projectControlFrameHeader"></ul>
+                    </div>
+                    
+                    <div id="interfacePageNameContainer">
+                        <div id="interfacePageNameButton" class='pageNameHeader'>
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="interfaceAdaptiveViewsContainer" title="Adaptive Views">
+                    <div id="interfaceAdaptiveViewsIconButton">&nbsp;</div>
+                    <div id="interfaceAdaptiveViewsButton" class='adaptiveViewHeader'>
+                        &nbsp;
+                    </div>
+                    <div id="adaptiveViewsDropdown" class="caret"></div>
+                </div>
+            </div>
+            
+            <div id="interfaceControlFrameContainer">
+                <div id="handoffControlFrameHeaderContainer">
+                    <ul id="handoffControlFrameHeader"></ul>
+                </div>
+                <div id="interfaceControlFrameLogoContainer">
+                    <div id="previewNotice">
+                        Local Preview
+                    </div>
+                </div>
+            </div>
+
+            <div id="interfaceControlFrameRight">
+                <div id="publishContainer">
+                    <a id="publishButton">Share Prototype</a>
+                </div>
+                
+                <div id="inspectControlFrameHeaderContainer">
+                    <ul id="inspectControlFrameHeader">
+                        <li id="overflowBtn">
+                            <a id="overflowMenuButton" title="View Options"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="separatorContainer">
+                    <div class="separator"></div>
+                </div>
+
+                <div id="overflowMadeWith"><a href="https://www.axure.com" id="axureLogo" target="_blank"></a></div>
+
+            </div>
+
         </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10514" class="ax_default box_1">
-        <div id="u10514_div" class=""></div>
-        <div id="u10514_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10515" class="ax_default image">
-        <img id="u10515_img" class="img " src="images/index/u10515.png"/>
-        <div id="u10515_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10516" class="ax_default label">
-        <div id="u10516_div" class=""></div>
-        <div id="u10516_text" class="text ">
-          <p><span>BENIOFIT 管理后台</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10517" class="ax_default image">
-        <img id="u10517_img" class="img " src="images/index/u10517.png"/>
-        <div id="u10517_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10518" class="ax_default label">
-        <div id="u10518_div" class=""></div>
-        <div id="u10518_text" class="text ">
-          <p><span>中文</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10519" class="ax_default image">
-        <img id="u10519_img" class="img " src="images/index/u10519.png"/>
-        <div id="u10519_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u10520" class="ax_default icon">
-        <img id="u10520_img" class="img " src="images/index/u10520.svg"/>
-        <div id="u10520_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10521" class="ax_default box_1">
-        <div id="u10521_div" class=""></div>
-        <div id="u10521_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10522" class="ax_default label">
-        <div id="u10522_div" class=""></div>
-        <div id="u10522_text" class="text ">
-          <p><span>登录</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10523" class="ax_default label">
-        <div id="u10523_div" class=""></div>
-        <div id="u10523_text" class="text ">
-          <p><span>账号</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (文本框(单行)) -->
-      <div id="u10524" class="ax_default text_field">
-        <div id="u10524_div" class=""></div>
-        <input id="u10524_input" type="text" value="请输入您登录的账号..." class="u10524_input"/>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10525" class="ax_default label">
-        <div id="u10525_div" class=""></div>
-        <div id="u10525_text" class="text ">
-          <p><span>密码</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (文本框(单行)) -->
-      <div id="u10526" class="ax_default text_field">
-        <div id="u10526_div" class=""></div>
-        <input id="u10526_input" type="text" value="请输入您登录的密码..." class="u10526_input"/>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10527" class="ax_default primary_button">
-        <div id="u10527_div" class=""></div>
-        <div id="u10527_text" class="text ">
-          <p><span>登录</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10528" class="ax_default image">
-        <img id="u10528_img" class="img " src="images/index/u10528.png"/>
-        <div id="u10528_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10529" class="ax_default image">
-        <img id="u10529_img" class="img " src="images/index/u10529.png"/>
-        <div id="u10529_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u10530" class="ax_default icon">
-        <img id="u10530_img" class="img " src="images/index/u10530.svg"/>
-        <div id="u10530_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10531" class="ax_default label">
-        <div id="u10531_div" class=""></div>
-        <div id="u10531_text" class="text ">
-          <p><span>如忘记密码，请联系管理员重置密码</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10532" class="ax_default box_1">
-        <div id="u10532_div" class=""></div>
-        <div id="u10532_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10533" class="ax_default _文本">
-        <div id="u10533_div" class=""></div>
-        <div id="u10533_text" class="text ">
-          <p><span>© 2025 Lenovo. All rights reserved.</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10534" class="ax_default box_1">
-        <div id="u10534_div" class=""></div>
-        <div id="u10534_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10535" class="ax_default label">
-        <div id="u10535_div" class=""></div>
-        <div id="u10535_text" class="text ">
-          <p><span>选择语言/地区</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10536" class="ax_default image">
-        <img id="u10536_img" class="img " src="images/index/u10536.png"/>
-        <div id="u10536_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10537" class="ax_default label">
-        <div id="u10537_div" class=""></div>
-        <div id="u10537_text" class="text ">
-          <p><span>简体中文</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10538" class="ax_default image">
-        <img id="u10538_img" class="img " src="images/index/u10519.png"/>
-        <div id="u10538_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u10539" class="ax_default icon">
-        <img id="u10539_img" class="img " src="images/index/u10520.svg"/>
-        <div id="u10539_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10540" class="ax_default label">
-        <div id="u10540_div" class=""></div>
-        <div id="u10540_text" class="text ">
-          <p><span>繁體中文</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10541" class="ax_default image">
-        <img id="u10541_img" class="img " src="images/index/u10541.png"/>
-        <div id="u10541_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10542" class="ax_default label">
-        <div id="u10542_div" class=""></div>
-        <div id="u10542_text" class="text ">
-          <p><span>繁體中文</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10543" class="ax_default image">
-        <img id="u10543_img" class="img " src="images/index/u10543.png"/>
-        <div id="u10543_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10544" class="ax_default label">
-        <div id="u10544_div" class=""></div>
-        <div id="u10544_text" class="text ">
-          <p><span>Franch(Canada)</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10545" class="ax_default image">
-        <img id="u10545_img" class="img " src="images/index/u10545.png"/>
-        <div id="u10545_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10546" class="ax_default label">
-        <div id="u10546_div" class=""></div>
-        <div id="u10546_text" class="text ">
-          <p><span>Franch</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10547" class="ax_default image">
-        <img id="u10547_img" class="img " src="images/index/u10547.png"/>
-        <div id="u10547_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10548" class="ax_default label">
-        <div id="u10548_div" class=""></div>
-        <div id="u10548_text" class="text ">
-          <p><span>English</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u10549" class="ax_default label">
-        <div id="u10549_div" class=""></div>
-        <div id="u10549_text" class="text ">
-          <p><span>English(American)</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10550" class="ax_default image">
-        <img id="u10550_img" class="img " src="images/index/u10550.png"/>
-        <div id="u10550_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (图像) -->
-      <div id="u10551" class="ax_default image">
-        <img id="u10551_img" class="img " src="images/index/u10551.png"/>
-        <div id="u10551_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (直线 / 行距) -->
-      <div id="u10552" class="ax_default line">
-        <img id="u10552_img" class="img " src="images/index/u10552.svg"/>
-        <div id="u10552_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
     </div>
-    <script src="resources/scripts/axure/ios.js"></script>
-  </body>
+    <div id="popupContainer">
+        <div id='interfaceAdaptiveViewsListContainer'>
+        </div>
+
+        <div id='interfaceScaleListContainer'>
+        </div>
+
+        <div id='accountLoginContainer'>
+        </div>
+
+        <div id='overflowMenuContainer'>
+        </div>
+    </div>
+    <div id="outerContainer">
+        <div id="clippingBounds">
+            <div id="clippingBoundsScrollContainer"></div>
+        </div>
+
+        <div id="mHideSidebar"></div>
+        <div id="lsplitbar" class="splitbar"></div>
+
+        <div id="mainPanel">
+            <div id="mainPanelContainer" style="position: relative; width:100%; height: 100%;">
+                <div id="clipFrameScroll" style="position: relative; width:100%; height: 100%; background-color: #ffffff;">
+                    <iframe id="mainFrame" name="mainFrame" width="100%" height="100%" src="about:blank" frameborder="0" style="display: block;position:absolute;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="rsplitbar" class="splitbar"></div>
+
+    </div>
+
+    <div id="maximizePanelContainer" class="maximizePanelContainer">
+        <div id="maximizePanelOver">
+            <div id="maximizePanel" title="Expand" class="maximizePanelOver">
+                <div id="maximizeButton" class="maximizeButton maximizeIcon"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobileControlFrameContainer"></div>
+
+<!-- 9.0.0.3658 -->
+<script src="resources/scripts/jquery-3.2.1.min.js"></script>
+<script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+<script src="resources/scripts/axutils.js"></script>
+<script src="resources/scripts/messagecenter.js"></script>
+<script src="resources/scripts/player/axplayer.js"></script>
+<script src="resources/scripts/player/init.js"></script>
+
+
+</body>
 </html>

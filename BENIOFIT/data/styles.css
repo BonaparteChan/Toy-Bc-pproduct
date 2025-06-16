@@ -125,7 +125,7 @@
 .horizontal_line {
 }
 .refs-webm-wechat {
-  font-family:'PingFang SC Medium', 'PingFang SC';
+  font-family:'PingFang SC';
   font-weight:400;
   font-style:normal;
 }
@@ -200,7 +200,7 @@
 .flow_shape {
 }
 ._标题_11 {
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:32px;
@@ -212,14 +212,14 @@
   font-style:normal;
 }
 ._32号字_单行列表内，右方操作说明的文字__） {
-  font-family:'PingFang SC Medium', 'PingFang SC';
+  font-family:'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:16px;
   text-align:left;
 }
 ._28号字_页面备注信息及列表的表头说明文字__） {
-  font-family:'PingFang SC Medium', 'PingFang SC';
+  font-family:'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -249,12 +249,14 @@
 .placeholder {
 }
 ._34号字_单行列表内，左方主标题文字字） {
-  font-family:'PingFang SC Medium', 'PingFang SC';
+  font-family:'PingFang SC';
   font-weight:400;
   font-style:normal;
   font-size:17px;
   text-align:left;
 }
 .line1 {
+}
+._水平线 {
 }
 textarea, select, input, button { outline: none; }
